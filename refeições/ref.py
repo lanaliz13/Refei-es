@@ -31,12 +31,12 @@ print(f"{creme_galinhaA} alunos estiveram ausentes na refeição que serviu Crem
 
 arr = []
 
-for item in ru.data:
-    id_student = item["STUDENT_ID"]
+for item2 in ru.data:
+    id_student = item2['STUDENT_ID']
     cont = 0
     for item2 in ru.data:
-        if (id_student = item2['STUDENT_ID']):
-            count += 1
+        if (id_student == item2['STUDENT_ID']):
+            cont += 1
             
     if cont > 1:
         if id_student not in arr:
